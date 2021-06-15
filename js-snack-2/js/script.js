@@ -61,6 +61,15 @@ for(var i = 0; i < zucchine.length; i++){
 }
 
 console.log(zucchine);
+
+//2) calcolo il totale del peso
+var totWeigth = 0;
+
+for(var i = 0; i < zucchine.length; i++){
+    totWeigth += zucchine[i].weigth
+}
+
+console.log(totWeigth);
 //** functions */
 //1b) creo due funzioni per creare randomicamente il peso e la lunghezza delle zucchine
 function generateWeigth(min, max) {
