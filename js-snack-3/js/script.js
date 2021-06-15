@@ -61,14 +61,28 @@ for(var i = 0; i < zucchine.length; i++){
 
 console.log(zucchine);
 
-//2) calcolo il totale del peso
-var totWeigth = 0;
+//2) divido le zucchine in base alla lunghezza in due array diverse
+var shortLength = [];
+var longLength = [];
 
 for(var i = 0; i < zucchine.length; i++){
-    totWeigth += zucchine[i].weigth
+    if(zucchine[i].length <= 15){
+        shortLength.push(zucchine[i]);
+    } else{
+        longLength.push(zucchine[i]);
+    }
 }
+console.log(shortLength);
+console.log(longLength);
 
-console.log(totWeigth);
+// //2) calcolo il totale del peso
+// var totWeigth = 0;
+
+// for(var i = 0; i < zucchine.length; i++){
+//     totWeigth += zucchine[i].weigth
+// }
+
+// console.log(totWeigth);
 //** functions */
 //1b) creo due funzioni per creare randomicamente il peso e la lunghezza delle zucchine
 function generateWeigth(min, max) {
