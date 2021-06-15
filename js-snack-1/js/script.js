@@ -20,8 +20,6 @@ var bikes = [
 //2) attribuisco un valore peso minimo alla bici n° 1[0] dell'array
 var weigthMin = bikes[0].weigth;
 
-console.log(weigthMin);
-
 //3) utilizzo un ciclo for (che parte dal secondo oggetto [1] perchè il primo è quello che abbiamo attribuito alla variabile) per sostituire il peso minimo ogni volta che trova un oggetto di peso inferiore e dichiaro una variabile che abbia il valore uguale alla posizione dell'oggetto con weigth inferiore
 for (var i = 1; i < bikes.length; i++){
     if(bikes[i].weigth < weigthMin){
@@ -38,7 +36,3 @@ for(var k in bikes[objectPos]){
 }
 
 document.getElementById('lighter-bike').innerHTML = lighterBike;
-
-
-
-
